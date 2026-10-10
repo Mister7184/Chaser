@@ -15,11 +15,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Vector3 direction = new Vector3(
-            Input.GetAxisRaw("Horizontal"),
-            0f,
-            Input.GetAxisRaw("Vertical")
-        ).normalized;
+        Vector3 direction = new Vector3(Input.GetAxisRaw("Horizontal"), 0f,
+            Input.GetAxisRaw("Vertical")).normalized;
 
         if (_characterController.isGrounded)
         {
